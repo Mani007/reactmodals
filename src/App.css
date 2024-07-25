@@ -21,7 +21,7 @@
   /* align-items: center;
   justify-content: center; */
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: rgb(79, 82, 221);
 }
 
 .App-link {
@@ -58,7 +58,7 @@
   left: 50%;
   align-items: center;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 5px;
   max-width: 500px;
