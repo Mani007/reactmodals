@@ -63,3 +63,10 @@
   border-radius: 5px;
   max-width: 500px;
 }
+.testing {
+
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+
+}

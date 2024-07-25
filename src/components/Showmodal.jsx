@@ -7,10 +7,13 @@ function Showmodal({toggleModal}) {
     },[])
   return (
     <>
+    <div className='testing'>
+
     <div className='modal-wrapper' onClick={toggleModal}></div>
     <div className='modal-container'>
                 <h2>This is a modal</h2>
                 <button onClick={toggleModal}>Close</button>
+    </div>
     </div>
     </>
   )
