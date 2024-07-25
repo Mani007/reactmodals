@@ -3,6 +3,7 @@ import React, { useEffect } from 'react'
 function Showmodal({toggleModal}) {
     useEffect(() =>{
         document.body.style.overflowY = 'hidden';
+        return () => document.body.style.overflowY = 'auto'; // when component unmounts, restore scroll a.k.a as cleanup function 
     },[])
   return (
     <>
