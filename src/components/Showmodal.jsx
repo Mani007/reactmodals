@@ -1,8 +1,13 @@
 import React from 'react'
 
-function Showmodal() {
+function Showmodal({toggleModal}) {
   return (
-    <div>Showmodal</div>
+    <>
+    <div>
+                <h2>This is a modal</h2>
+                <button onClick={toggleModal}>Close</button>
+            </div>
+    </>
   )
 }
 
