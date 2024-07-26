@@ -2,7 +2,7 @@ import React from 'react'
 
 function Base() {
   return (
-    <div>Base</div>
+    <div className='text-red-200' >Base</div>
   )
 }
 
