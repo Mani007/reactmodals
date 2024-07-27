@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useRef } from 'react'
 import ReactDOM from 'react-dom'
 function Showmodal({toggleModal}) {
+
+  const modalref = useRef(null)
+
     useEffect(() =>{
         document.body.style.overflowY = 'hidden';
         return () => document.body.style.overflowY = 'auto'; // when component unmounts, restore scroll a.k.a as cleanup function 
@@ -8,11 +11,26 @@ function Showmodal({toggleModal}) {
   return ReactDOM.createPortal(
     <>
     {/* <div className='testing'> */}
-
-    <div className='modal-wrapper' onClick={toggleModal}></div>
-    <div className='modal-container'>
+    <div ref={modalref} onMouseEnter={(clientX) =>{
+      console.log(clientX)
+      // if(clientX > modalref.current.offsetLeft + modalref.current.clientWidth/2){
+      //   console.log('right');
+      // }else{
+      //   console.log('left');
+      // }
+    }}>
+    <div  className={() =>
+      `absolute px-100 `
+      //${modalref.current.getBoundingClientRect()}
+    
+    } onClick={toggleModal}></div>
+    <div className={()=>
+      ` absolute  `
+      //${modalref.current.getBoundingClientRect()}
+    }>
                 <h2>This is a modal</h2>
                 <button onClick={toggleModal}>Close</button>
+    </div>
     </div>
     {/* </div> */}
     </>, 

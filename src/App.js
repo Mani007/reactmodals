@@ -8,9 +8,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Tooltipuse/>
+        {/* <Tooltipuse/> */}
         {/* <Base/> */}
-        {/* <Modal/> */}
+        <Modal/>
       </header>
     </div>
   );
