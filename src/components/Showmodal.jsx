@@ -19,15 +19,8 @@ function Showmodal({toggleModal}) {
       //   console.log('left');
       // }
     }}>
-    <div  className={() =>
-      `absolute px-100 `
-      //${modalref.current.getBoundingClientRect()}
-    
-    } onClick={toggleModal}></div>
-    <div className={()=>
-      ` absolute  `
-      //${modalref.current.getBoundingClientRect()}
-    }>
+    <div  className='modal-wrapper' onClick={toggleModal}></div>
+    <div className='modal-container'>
                 <h2>This is a modal</h2>
                 <button onClick={toggleModal}>Close</button>
     </div>
